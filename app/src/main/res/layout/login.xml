@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="选宿舍系统"
-        android:textSize="10pt"
+        android:textSize="15pt"
         />
     <RelativeLayout
         android:id="@+id/input_info"

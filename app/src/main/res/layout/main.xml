@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
-    <TextView
+    <LinearLayout
         android:id="@+id/maintext"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="个人信息主页"
-        android:textSize="12pt"
-        android:textColor="#000000"
+        android:background="#ffffff"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人信息主页"
+            android:textSize="15pt"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/block"
+        android:layout_below="@id/maintext"
+        android:layout_width="match_parent"
+        android:layout_height="20.0dp"
+        android:background="@color/lightgrey"
         />
     <ScrollView
-        android:layout_below="@id/maintext"
+        android:layout_below="@id/block"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -25,71 +37,86 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
             <TextView
                 android:id="@+id/info_xhlable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="学号"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="15pt"
                 />
-            <EditText
+            <TextView
                 android:id="@+id/info_xuehao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
                 android:text=""
-                android:textSize="10pt"
+                android:textColor="#000000"
                 android:editable="false"
                 />
             </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/lightgrey"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
                 <TextView
                     android:id="@+id/info_xmlabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="姓名"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
-                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="15pt"
                     />
-                <EditText
+                <TextView
                     android:id="@+id/info_xingming"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
                     android:editable="false"
                     />
             </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/lightgrey"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
                 <TextView
                     android:id="@+id/info_gdlabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="性别"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
-                    android:layout_alignParentLeft="true"
+                    android:textColor="#000000"
+                    android:textSize="15pt"
+                    android:layout_gravity="center_vertical"
                     />
-                <EditText
+                <TextView
                     android:id="@+id/info_gender"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:editable="false"
+                    android:layout_gravity="center_vertical"
                     />
             </LinearLayout>
             <LinearLayout
@@ -97,129 +124,178 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
                 <TextView
                     android:id="@+id/info_vclabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="确认码"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
-                    android:layout_alignParentLeft="true"
+                    android:textSize="15pt"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_vertical"
                     />
-                <EditText
+                <TextView
                     android:id="@+id/info_vcode"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:editable="false"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_vertical"
                     />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
+
                 <TextView
                     android:id="@+id/info_roomlabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:text="房间号"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
-                    android:layout_alignParentLeft="true"
-                    />
-                <EditText
+                    android:textColor="#000000"
+                    android:textSize="15pt" />
+
+                <TextView
                     android:id="@+id/info_room"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
                     android:editable="false"
                     />
             </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/lightgrey"
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#ffffff"
                 android:orientation="horizontal"
-                android:paddingBottom="10dp"
-                >
+                android:paddingBottom="10dp">
+
                 <TextView
                     android:id="@+id/info_buildlabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="楼号"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
                     android:layout_alignParentLeft="true"
-                    />
+                    android:layout_gravity="center_vertical"
+                    android:text="楼号"
+                    android:textColor="#000000"
+                    android:textSize="15pt" />
 
-                <EditText
+                <TextView
                     android:id="@+id/info_building"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
                     android:editable="false"
-                    />
+                    android:textColor="#000000" />
             </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/lightgrey"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
                 <TextView
                     android:id="@+id/info_loclabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="所在校区"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
-                    android:layout_alignParentLeft="true"
+                    android:textSize="15pt"
+                    android:textColor="#000000"
+                    android:layout_gravity="center_vertical"
                     />
-                <EditText
+                <TextView
                     android:id="@+id/info_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
                     android:editable="false"
+                    android:textColor="#000000"
                     />
             </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/lightgrey"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingBottom="10dp"
+                android:background="#ffffff"
                 >
                 <TextView
                     android:id="@+id/info_gradelabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="年级"
-                    android:textSize="10pt"
-                    android:textStyle="bold"
-                    android:layout_alignParentLeft="true"
+                    android:textSize="15pt"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
                     />
-                <EditText
+                <TextView
                     android:id="@+id/info_grade"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
                     android:editable="false"
+                    android:textColor="#000000"
                     />
             </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30.0dp"
+                android:background="@color/lightgrey"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在此处查看并确认个人信息，选宿舍宿舍开放时间为8：00-23：00，请大家及时选择宿舍。点击查看宿舍按钮可查看剩余宿舍房间，进入选宿舍界面后需输入同选宿舍人的信息"/>
         </LinearLayout>
     </ScrollView>
         <Button
             android:id="@+id/selectroom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
             android:visibility="invisible"
             android:text="选择宿舍"
             android:textSize="10pt"
             android:fontFamily="casual"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
             />
         <Button
             android:id="@+id/roomcheck"

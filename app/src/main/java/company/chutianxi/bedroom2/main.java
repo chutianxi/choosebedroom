@@ -33,7 +33,7 @@ import company.chutianxi.util.HttpsClient;
 
 public class main extends Activity implements View.OnClickListener{
     String username;
-    private EditText Tname,Tgender,Tvcode,Troom,Tbuilding,Tlocation,Tgrade;
+    private TextView Tname,Tgender,Tvcode,Troom,Tbuilding,Tlocation,Tgrade;
     private TextView Tstudentid;
     private Button secroom;//选宿舍按钮
     private Button checkroom;//查宿舍按钮

@@ -72,8 +72,8 @@ public class selectRoom extends Activity implements View.OnClickListener, ViewPa
         setContentView(R.layout.selectroom);
         stuid = getIntent().getStringExtra("username");
         initview();
-/*        SharedPreferences pref = getSharedPreferences("config", MODE_PRIVATE);
-        stuid = pref.getString("stuid", "1301210899");*/
+        SharedPreferences pref = getSharedPreferences("config", MODE_PRIVATE);
+        stuid = pref.getString("stuid", "1301210899");
     }
 
     private void requestForDetail(final Map<String,String> map) { new Thread(new Runnable() {
